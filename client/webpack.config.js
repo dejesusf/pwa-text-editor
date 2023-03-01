@@ -30,7 +30,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'jate',
+        short_name: 'JATE',
         description: 'Just another text editor.',
         background_color: '#225ca3',
         theme_color: '#225ca3',
@@ -40,7 +40,7 @@ module.exports = () => {
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('assets', 'icons',)
+            destination: path.join('src', 'images',)
           }
         ]
       })
@@ -49,8 +49,12 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.css$/i,
+          test: /\.css$/,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
         },
         {
           test: /\.m?js$/,
