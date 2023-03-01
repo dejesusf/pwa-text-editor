@@ -6,6 +6,8 @@ This challenge was on Progressive Web Applications. Since we didn't spend a lot 
 
 Click [this link](https://the-pwa-text-edit.herokuapp.com) to visit this application that's hosted on Heroku.
 
+![screenshot of deployed application](./assets/pwa%20text%20editor.png)
+
 ## License
 
 ![License Badge](https://img.shields.io/static/v1?label=license&message=None&color=blue)
